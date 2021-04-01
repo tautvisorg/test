@@ -10,4 +10,12 @@ jobs:
       image: ubuntu
     steps:
       - echo "Building..."
+      - echo "Done"
+  test:
+    docker:
+      image: ubuntu
+    steps:
+      - echo "Testing..."
+    depends-on:
+      - build
 
