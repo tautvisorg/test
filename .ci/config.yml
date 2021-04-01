@@ -1,0 +1,13 @@
+triggers:
+  push:
+    events:
+      - push
+      - pull_request
+
+jobs:
+  build:
+    docker:
+      image: ubuntu
+    steps:
+      - echo "Building..."
+
